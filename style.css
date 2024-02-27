@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, rgb(14, 41, 252),#fbe4e4);
+}
+.container{
+    width: 350px;
+    height: 190px;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    transition: .5s;
+    position: relative;
+}
+.container:hover{
+    height: 450px;
+    width: 350px;
+}
+.container .card{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+    border-radius: .5rem;
+    transition: .5s;
+    overflow: hidden;
+}
+.container:hover .card{
+    height: 250px;
+    width: 250px;
+}
+.container .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.container .contant{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.container .contant .details{
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    transform: translateY(140px);
+    transition: .5s;
+}
+.container:hover .details{
+    transform: translateY(0);
+}
+.container:hover .contant{
+    visibility: visible;
+    color: black;
+}
+.container .contant .card-text{
+    visibility: visible;
+    font-size: 23px;
+    font-weight: bold;
+    color : crimson;
+}
+.container:hover .contant .card-text{
+  padding : 0px 10px;
+  color : crimson;
+  text-align : center;
+  visibility : visible;
+  transition : 0.3s ease-in-out;
+  transition-delay: 0.2s;
+}
+.contant .small-text{
+  text-align : center;
+  font-size: 18px;
+  padding: 10px;
+  visibility: visible;
+}
+.contant .contant-text{
+    visibility: hidden;
+    font-size: 18px;
+}
+.container:hover .contant .contant-text{
+    visibility: visible;
+    font-size: 18px;
+}
